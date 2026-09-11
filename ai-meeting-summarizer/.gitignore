@@ -1,0 +1,49 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+tfplan
+tfplan.json
+
+# Terraform Variables (contain environment-specific settings)
+*.tfvars
+*.tfvars.json
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+aws_credentials
+.aws/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Lambda Build Artifacts
+lambda/package/
+*.zip
+
+# Test/Response Files (may contain sensitive data)
+response.json
+lambda-test.json
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Miscellaneous
+*.log
+*.tmp
